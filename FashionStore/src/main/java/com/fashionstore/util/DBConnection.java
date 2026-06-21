@@ -15,7 +15,7 @@ public class DBConnection {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 conn = DriverManager.getConnection(
-                    "jdbc:mysql://mysql.railway.internal:3306/railway",
+                		"jdbc:mysql://reseau.proxy.rlwy.net:55510/railway",
                     "root",
                     "rErtUgpOURjcodlZyxsAkNTsnOCpSZkS"
                 );

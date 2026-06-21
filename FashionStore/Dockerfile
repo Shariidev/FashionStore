@@ -4,11 +4,13 @@ WORKDIR /app
 
 COPY . .
 
+WORKDIR /app/FashionStore
+
 RUN mvn clean package -DskipTests
 
 FROM tomcat:10.1-jdk21
 
-COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /app/FashionStore/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 

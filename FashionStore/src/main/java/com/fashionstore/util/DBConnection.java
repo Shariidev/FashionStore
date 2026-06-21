@@ -15,9 +15,9 @@ public class DBConnection {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/fashion_store",
-                        "root",
-                        "root"
+                    "jdbc:mysql://mysql.railway.internal:3306/railway",
+                    "root",
+                    "rErtUgpOURjcodlZyxsAkNTsnOCpSZkS"
                 );
 
                 System.out.println("Database Connected Successfully");

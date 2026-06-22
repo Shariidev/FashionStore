@@ -4,6 +4,9 @@
          version="5.0">
 
     <display-name>FashionStore</display-name>
-    
+
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
 
 </web-app>

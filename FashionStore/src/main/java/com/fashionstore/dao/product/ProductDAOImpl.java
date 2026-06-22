@@ -26,6 +26,7 @@ public class ProductDAOImpl implements ProductDAO {
         String sql = "SELECT * FROM products";
 
         try {
+        	System.out.println("Fetching products...");
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
 
@@ -199,6 +200,7 @@ public class ProductDAOImpl implements ProductDAO {
 
                 list.add(p);
             }
+            System.out.println("Products found: " + list.size());
 
         } catch (Exception e) {
             e.printStackTrace();
